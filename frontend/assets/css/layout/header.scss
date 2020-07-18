@@ -14,14 +14,26 @@
 }
 
 header {
-    background: #f0f0f0;
+    background: transparent;
+    position: absolute;
     width: 100%;
     padding: 0.5em 0;
+
+    @media (min-width: 768px) {
+        background: $navbar-color;
+    }    
+}
+
+.header-wrapper {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     padding: 0 0 0 5%;
     font-family: Beautiful Heart;
+    color: $primary-color-text;
     
     img {
         display: block;
@@ -62,6 +74,7 @@ header {
             line-height: 1;
             text-decoration: none;
             text-transform: lowercase;
+            color: $primary-color-text;
         }
 
         @media (min-width: 768px) {
@@ -77,7 +90,6 @@ header {
 }
 
 .nav-bar {
-    background: #f0f0f0;
     height: 100%;
     width: 90%;
     max-width: 320px;
@@ -114,8 +126,8 @@ header {
     height: 0;
     width: .75em;
     padding-top: .125em;
-    border-top: .375em double #a6abd9;
-    border-bottom: .125em solid #a6abd9;
+    border-top: .375em double $primary-color-text;
+    border-bottom: .125em solid $primary-color-text;
     vertical-align: middle;
     margin: 0.5em;
 }

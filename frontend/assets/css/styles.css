@@ -453,14 +453,27 @@ img {
 }
 
 header {
-  background: #f0f0f0;
+  background: transparent;
+  position: absolute;
   width: 100%;
   padding: 0.5em 0;
+}
+@media (min-width: 768px) {
+  header {
+    background: #1a1515;
+  }
+}
+
+.header-wrapper {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   padding: 0 0 0 5%;
   font-family: Beautiful Heart;
+  color: #FFFFFF;
 }
 .logo img {
   display: block;
@@ -498,6 +511,7 @@ header {
   line-height: 1;
   text-decoration: none;
   text-transform: lowercase;
+  color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .menu li {
@@ -512,7 +526,6 @@ header {
 }
 
 .nav-bar {
-  background: #f0f0f0;
   height: 100%;
   width: 90%;
   max-width: 320px;
@@ -551,8 +564,8 @@ header {
   height: 0;
   width: 0.75em;
   padding-top: 0.125em;
-  border-top: 0.375em double #a6abd9;
-  border-bottom: 0.125em solid #a6abd9;
+  border-top: 0.375em double #FFFFFF;
+  border-bottom: 0.125em solid #FFFFFF;
   vertical-align: middle;
   margin: 0.5em;
 }
@@ -563,7 +576,25 @@ header {
   background-size: cover;
   color: white;
   height: 100%;
-  padding-top: 1em;
+}
+.section-1 .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-1 .textarea {
+  text-align: center;
+}
+.section-1 .textarea p {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+.section-1 .textarea button {
+  border-radius: 99px;
+  border: 1.5px solid white;
+  background-color: transparent;
+  padding: 0.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */

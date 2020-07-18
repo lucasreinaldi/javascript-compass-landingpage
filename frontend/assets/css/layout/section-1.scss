@@ -4,5 +4,27 @@
     background-size: cover;
     color: white;
     height: 100%;
-    padding-top: 1em;    
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+    
+    .textarea {
+        text-align: center;
+        
+        p {
+            font-size: 1.5em;
+            letter-spacing: 2px;;
+        }
+
+        button {
+            border-radius: 99px;
+            border: 1.5px solid white;
+            background-color: transparent;
+            padding: 0.5em;
+        }
+    }
 }
