@@ -1,0 +1,119 @@
+header {
+    background: #f0f0f0;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 5%;
+    font-family: Beautiful Heart;
+    
+    img {
+        display: block;
+        width: 200px;
+    }
+}
+
+.menu {
+	font-weight: bold;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    
+    a {
+        display: block;
+        padding-right: 1em;
+        margin-right: 1em;    
+        line-height: 1;
+        text-decoration: none;
+        text-transform: lowercase;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+
+    li {
+        float: left;
+
+        a {
+            display: block;
+            padding-right: 1em;
+            margin-right: 1em;
+            line-height: 1;
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+
+        @media (max-width: 768px) {
+            padding: 1em 0;
+            width: 100%;
+        }
+    }
+}
+
+.menu-wrapper {
+    line-height: 87px;
+    padding-right: 3%;
+}
+
+.nav-bar {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.4em 0;
+
+    @media (max-width: 768px) {
+        background: #f0f0f0;
+        padding: 1em;
+        margin: 0;
+        height: 100%;
+        width: 90%;
+        max-width: 320px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -90%;
+        transition: left 0.3s ease-out;
+    }
+}
+
+.open-menu, .close-menu {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+
+    @media not all and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.open-menu {
+    height: 0;
+    width: .75em;
+    padding-top: .125em;
+    border-top: .375em double #a6abd9;
+    border-bottom: .125em solid #a6abd9;
+    vertical-align: middle;
+    margin: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .active-menu .nav-bar {
+      left: 0;
+  }
+
+  .active-menu:after {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.4);
+    }
+}
