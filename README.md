@@ -11,7 +11,7 @@ const travel-agency = {
 }
 ```
 
-# To install
+### To install
 ```javascript
 npm install -g gulp
 npm install -g gulp-cli
@@ -19,7 +19,7 @@ npm install -g less-watch-compiler
 npm install -g less
 ```
 
-# To run
+### To run
 ```javascript
 less-watch-compiler frontend/assets/less frontend/assets/less
 gulp - to run tasks
