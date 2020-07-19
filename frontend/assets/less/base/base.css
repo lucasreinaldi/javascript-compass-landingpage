@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 1.125em;
+  }
+}
+body {
+  height: 100%;
+  font-family: 'Roboto Light';
+  line-height: 1.4;
+}
+.section {
+  width: 100%;
+  padding: 0 1%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.flex {
+  display: flex !important;
+}
+img {
+  max-width: 100%;
+}

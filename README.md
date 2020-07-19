@@ -11,6 +11,8 @@ const travel-agency = {
 }
 
 gulp - to run tasks
+npm install -g less
+npm install -g less-watch-compiler
 
 * ruby is necessary to compile compass
 
