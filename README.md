@@ -1,5 +1,5 @@
 <h2>Travel Agency Landing Page</h2>
-<p>build using less and compass as stylesheets frameworks and pure js to complexes animations<p>
+<p>created using less and compass as stylesheets frameworks and pure js to animations<p>
 
 ### About the repo:  
 
@@ -7,10 +7,12 @@
 const travel-agency = {
   tools: ['html', 'less', 'compass', 'javascript', 'gulp'],
   architecture: ['static'],
-  done: '0%'
+  done: '10%'
 }
 
 gulp - to run tasks
+
+* ruby is necessary to compile compass
 
 ```
 
