@@ -10,9 +10,13 @@ const travel-agency = {
   done: '10%'
 }
 
-gulp - to run tasks
-npm install -g less
+npm install -g gulp
+npm install -g gulp-cli
 npm install -g less-watch-compiler
+npm install -g less
+
+less-watch-compiler frontend/assets/less frontend/assets/less
+gulp - to run tasks
 
 * ruby is necessary to compile compass
 
