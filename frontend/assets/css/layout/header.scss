@@ -1,3 +1,5 @@
+@import "../helpers/props.scss";
+
 .active-menu .nav-bar {
     left: 0;
 }
@@ -10,7 +12,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.4) !important;
 }
 
 header {
@@ -98,6 +100,7 @@ header {
     top: 0;
     left: -90%;
     transition: left 0.3s ease-out;
+    background: $primary-text-color;
 
     @media (min-width: 768px) {
         display: inline-block;
@@ -106,6 +109,7 @@ header {
         position: unset;
         max-width: unset;
         text-align: right;
+        background: transparent;
     }
 }
 

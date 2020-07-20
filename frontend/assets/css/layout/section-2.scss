@@ -1,31 +1,40 @@
+@import "../helpers/props.scss";
 @import "compass/css3";
 
 .section-2 {
-    background-color: $primary-color-light;
+    background: url('../img/home-bg.jpg') center bottom repeat-x;
     color: $primary-color-text;
     height: 100%;
 
     .container {
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;        
+        max-width: unset;
     }
     
-    .textarea {
+    .container-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        place-content: center;
+    }
+      
+    .column {
+        flex: 1 1 350px;        
         text-align: center;
-        
-        p {
-            font-size: 1.5em;
-            letter-spacing: 2px;;
-        }
+        font-size: 0.8em;
+     }
+    
+    .box {
+        background-color: $primary-text-color;
+        padding: 2em;
+        min-height: 200px;
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
 
-        button {
-            border-radius: 99px;
-            border: 1.5px solid white;
-            background-color: transparent;
-            padding: 0.5em;
-            @include box-shadow($primary-color-text 2px 2px 10px);
+        p {
+            font-size: 0.8em;
         }
     }
+
 }
