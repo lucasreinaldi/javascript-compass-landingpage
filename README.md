@@ -1,5 +1,5 @@
 <h2>Travel Agency Landing Page</h2>
-<p>created using sass, compass as stylesheets frameworks and pure js to animations and gulp to frontend tasks</p>
+<p>created using sass and compass as stylesheets frameworks, pure js to animations and gulp to frontend automations</p>
 
 ### About the repo:  
 
