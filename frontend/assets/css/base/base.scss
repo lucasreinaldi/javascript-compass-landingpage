@@ -29,3 +29,18 @@ body {
 img {
   max-width: 100%;
 }
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+  background-color: $primary-text-color;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 99px;
+  height: 30px;
+  background-color: $primary-color-text;
+}
