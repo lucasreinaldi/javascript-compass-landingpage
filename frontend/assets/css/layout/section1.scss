@@ -1,11 +1,10 @@
 @import "../helpers/props.scss";
 @import "compass/css3";
 
-.section-1 {
+.section1 {
     background: url('../img/home-bg.jpg') center bottom repeat-x;
     -webkit-background-size: cover;
     background-size: cover;
-    color: white;
     height: 100%;
 
     .container {
@@ -26,10 +25,11 @@
 
         button {
             border-radius: 99px;
-            border: 1.5px solid white;
-            background-color: transparent;
-            padding: 0.5em;
-            @include box-shadow($primary-color-text 2px 2px 10px);
+            border: 1.5px solid $primary-text-color;
+            background-color: rgba( $primary-color-text, .7 );
+            padding: 0.5em 1em 0.5em 1em;
+            @include box-shadow($primary-text-color 2px 2px 10px);
+            letter-spacing: 2px;
         }
     }
 }
