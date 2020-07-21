@@ -18,18 +18,24 @@
         text-align: center;
         
         p {
-            font-size: 1.5em;
+            color: $secondary-color-text;
+            font-size: 1.8em;
+            font-weight: 500;
             letter-spacing: 2px;
             text-transform: uppercase;
+            @include text-shadow($primary-color-text 2px 4px 3px);
         }
 
         button {
-            border-radius: 99px;
-            border: 1.5px solid $primary-text-color;
-            background-color: rgba( $primary-color-text, .7 );
-            padding: 0.5em 1em 0.5em 1em;
-            @include box-shadow($primary-text-color 2px 2px 10px);
-            letter-spacing: 2px;
+            background-color: rgba($secondary-color-text, .7 );
+            font-size: 0.9em;
+            font-weight: bold;
+            letter-spacing: 2px;            
+            margin-top: 1em;
+            border: 2px solid $secondary-color-text;
+            border-radius: 75px !important;
+            padding: 0.5em 2.7em 0.5em 2.7em;
+            @include box-shadow($secondary-color-text 0 2px 6.65px 0.35px);
         }
     }
 }

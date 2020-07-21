@@ -35,7 +35,7 @@ header {
 .logo {
     padding: 0 0 0 5%;
     font-family: Beautiful Heart;
-    color: $primary-color-text;
+    color: $secondary-color-text;
     
     img {
         display: block;
@@ -76,7 +76,7 @@ header {
             line-height: 1;
             text-decoration: none;
             text-transform: lowercase;
-            color: $primary-color-text;
+            color: $secondary-color-text;
         }
 
         @media (min-width: 768px) {
@@ -100,7 +100,7 @@ header {
     top: 0;
     left: -90%;
     transition: left 0.3s ease-out;
-    background: $primary-text-color;
+    background: $primary-color-text;
 
     @media (min-width: 768px) {
         display: inline-block;
@@ -130,8 +130,8 @@ header {
     height: 0;
     width: .75em;
     padding-top: .125em;
-    border-top: .375em double $primary-color-text;
-    border-bottom: .125em solid $primary-color-text;
+    border-top: .375em double $secondary-color-text;
+    border-bottom: .125em solid $secondary-color-text;
     vertical-align: middle;
     margin: 0.5em;
 }

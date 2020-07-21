@@ -38,11 +38,40 @@ img {
 }
 
 ::-webkit-scrollbar-track-piece  {
-  background-color: $primary-text-color;
+  background-color: $primary-color-text;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
   border-radius: 99px;
   height: 30px;
-  background-color: $primary-color-text;
+  background-color: $secondary-color-text;
+}
+
+.pd-top-20 {
+  margin-top: 25px !important;
+
+  @media (min-width: 768px) {
+    margin-top: 0px !important;
+  }
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.hide {
+  display: flex;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }}
+
+.hide-mobo {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
