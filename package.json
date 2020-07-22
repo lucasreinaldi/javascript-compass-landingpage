@@ -4,10 +4,14 @@
   "description": "",
   "scripts": {
     "ng": "ng",
-    "start": "npm install",
+    "start": "npm install && node index.js",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "nodemon": "nodemon",
+    "mongod": "mongod",
+    "serve": "ng serve --open",
+    "debug": "run-p serve mongod"
   },
   "keywords": [],
   "author": "Lucas Reinaldi",
