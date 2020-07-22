@@ -57,7 +57,7 @@ gulp.task('imagemin', function () {
 
 /* Revisão de arquivos */
 gulp.task('rev', function () {
-  return gulp.src(['docs/**/*.{css,js,jpg,jpeg,png}'])
+  return gulp.src(['docs/**/*.{css,js,jpeg,png}'])
     .pipe($.rev())
     .pipe($.revdel())
     .pipe(gulp.dest('docs/'))
