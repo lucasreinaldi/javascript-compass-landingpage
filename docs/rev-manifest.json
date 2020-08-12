@@ -1,7 +1,7 @@
 {
   "assets/img/logo.png": "assets/img/logo-19bda708df.png",
   "assets/js/menu.js": "assets/js/menu-65922601f1.js",
-  "assets/scss/css/base/base.css": "assets/scss/css/base/base-0cb8ea43fc.css",
+  "assets/scss/css/base/base.css": "assets/scss/css/base/base-0d02b6a33e.css",
   "assets/scss/css/base/normalize.css": "assets/scss/css/base/normalize-300ecc69ec.css",
   "assets/scss/css/helpers/media-queries.css": "assets/scss/css/helpers/media-queries-d41d8cd98f.css",
   "assets/scss/css/helpers/props.css": "assets/scss/css/helpers/props-5918b5cfc1.css",
@@ -10,5 +10,5 @@
   "assets/scss/css/layout/section2.css": "assets/scss/css/layout/section2-4deb821b55.css",
   "assets/scss/css/layout/section3.css": "assets/scss/css/layout/section3-fc957c899d.css",
   "assets/scss/css/layout/section4.css": "assets/scss/css/layout/section4-678a9c0248.css",
-  "assets/scss/css/styles.css": "assets/scss/css/styles-f748727858.css"
+  "assets/scss/css/styles.css": "assets/scss/css/styles-8cacf6f9cd.css"
 }

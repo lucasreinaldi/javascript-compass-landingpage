@@ -72,8 +72,7 @@ button {
     transition: all 0.3s ease 0s;
     cursor: pointer;
   &:hover {
-    background-color: $accent-color-text;
-    @include box-shadow($accent-color-text 0 15px 20px 0.1px);
+     @include box-shadow($accent-color-text 0 15px 20px 0.1px);
     color: $primary-alt-color-text;
     transform: translateY(-4px);
   }
