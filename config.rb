@@ -4,8 +4,8 @@ require 'compass/import-once/activate'
 # Set this to the root of your project when deployed:
 # Change paths to yours. css_dir is css output directory, sass_dir is your sass file directory
 http_path = "/"
-css_dir = "frontend/assets/css"
-sass_dir = "frontend/assets/css"
+css_dir = "frontend/assets/scss/css"
+sass_dir = "frontend/assets/scss"
 images_dir = "i"
 javascripts_dir = "js"
 

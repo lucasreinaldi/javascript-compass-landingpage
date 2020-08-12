@@ -1,0 +1,59 @@
+@import "../helpers/props.scss";
+@import "../helpers/media-queries.scss";
+@import "compass/css3";
+
+.section3 {
+    background-color: $background-color-alt;
+    color: $primary-color-text;
+
+    .container-wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+
+        @include mq("desktop-hd") {
+            flex-direction: row;
+        }
+    }
+
+    .btn-accent {
+        margin-left: 0;
+    }
+
+    .text-wrapper {
+        margin: 3vh 0 3vh 0;
+
+        @include mq("desktop-hd") {
+            margin-right: 10%;
+        }
+
+        p {
+            font-family: Roboto Light;
+            font-size: 1.7em;
+            line-height: 1.3em;
+            font-weight: 400;
+            margin: 20px;
+            text-align: left;
+
+            @include mq("desktop-hd") {
+                margin: 0 0 35px 0;
+                max-width: unset;
+                font-size: 2.3em !important;
+            }
+        }
+    }
+
+    .image-wrapper {
+        img {
+            display: flex;
+        }
+    }
+
+    .btn-wrapper {
+        text-align: center;
+
+        @include mq("desktop-hd") {
+            text-align: left;
+        }
+    }
+}

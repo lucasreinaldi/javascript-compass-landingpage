@@ -1,0 +1,95 @@
+@import "../helpers/props.scss";
+@import "../helpers/media-queries.scss";
+@import "compass/css3";
+
+.section2 {
+    background-color: $background-color;
+    color: $primary-color-text;
+    text-align: center;
+
+    h2 {
+        font-size: 2em;
+        margin: 1em 0 0.4em 0;
+    }
+
+    h4 {
+        padding: 0 20px 0 20px;
+        font-size: 14px;
+        font-weight: 100;
+
+        @include mq("desktop-hd") {
+            padding: 0;
+        }
+    }
+
+    .container-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        place-content: center;
+    }
+
+    .column {
+        flex: 1 1 350px;
+        text-align: center;
+        font-size: 1em;
+
+        @include mq("desktop-hd") {
+            flex: 1 1 220px;
+        }
+    }
+
+    .box {
+        padding: 2em 1em 0em 1em;
+        min-height: 200px;
+        margin: auto;
+        opacity: 0.9;
+        color: $primary-color-text;
+
+        img {
+            height: 150px;
+            width: 150px;
+            background-color: $navbar-color;
+            padding: 1em;
+        }
+
+        h6 {
+            font-family: Roboto Light;
+            font-weight: 100;
+            font-size: 1em;
+
+            @include mq("desktop-hd") {
+                font-size: 0.75em;
+            }
+        }
+
+        h4 {
+            color: $secondary-color-text;
+            font-size: 1.4em;
+            font-weight: 600;
+
+            @include mq("desktop-hd") {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .button-wrapper {
+        display: block;
+        justify-content: space-around;
+        padding: 15% 10% 0 10%;
+
+        @include mq("desktop-hd") {
+            display: flex;
+            padding: 60px 25% 25px 25%;
+        }
+
+        p {
+            font-size: 0.9em;
+
+            @include mq("desktop-hd") {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

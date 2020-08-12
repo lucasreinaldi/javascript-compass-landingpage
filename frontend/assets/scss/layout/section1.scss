@@ -1,0 +1,43 @@
+@import "../helpers/props.scss";
+@import "../helpers/media-queries.scss";
+@import "compass/css3";
+
+.section1 {
+    background: url("../../img/section1/home-bg.jpg");
+    @include background-size(cover);
+    height: 100%;
+    background-position: 53% 50%;
+
+    @include mq("desktop-hd") {
+        background-position: 30% 50%;
+    }    
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textarea {
+        text-align: center;
+
+        p {
+            border-radius: 70px;
+            font-size: 2.7em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            background-color: rgba(265, 265, 265, 0.75);
+            padding: 20px;
+            margin-bottom: 40px;
+
+            @include mq("desktop-hd") {
+                color: $accent-color-text !important;
+                justify-content: flex-end;
+                background-color: unset;
+                margin-bottom: 20px;
+                padding: 0;
+            }
+        }
+    }
+}

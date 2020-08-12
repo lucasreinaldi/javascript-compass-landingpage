@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({ rename: { 'gulp-rev-delete-original': 'revdel', 'gulp-if': 'if' } });
 
-/* Tasks base */
 gulp.task('copy', function () {
   return gulp.src(['frontend/assets/{img,font,webfonts}/**/*', 'frontend/app.yaml', 'frontend/CNAME', 'frontend/assets/files/*'], { base: 'frontend' })
     .pipe(gulp.dest('docs'));
@@ -12,7 +11,6 @@ gulp.task('clean', function () {
     .pipe($.clean());
 });
 
-/* Minificação */
 gulp.task('minify-js', function () {
   return gulp.src('frontend/**/*.js')
     .pipe($.uglify())
@@ -31,7 +29,6 @@ gulp.task('minify-html', function () {
     .pipe(gulp.dest('docs/'))
 });
 
-/* Concatenação */
 gulp.task('useref', function () {
   return gulp.src('frontend/index.html')
     .pipe($.useref())
@@ -42,7 +39,6 @@ gulp.task('useref', function () {
     .pipe(gulp.dest('docs'));
 });
 
-/* Imagens */
 gulp.task('imagemin', function () {
   return gulp.src('frontend/assets/img/*')
     .pipe($.imagemin({
@@ -55,7 +51,6 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('docs/assets/img'));
 });
 
-/* Revisão de arquivos */
 gulp.task('rev', function () {
   return gulp.src(['docs/**/*.{css,js,jpeg,png}'])
     .pipe($.rev())
@@ -74,9 +69,6 @@ gulp.task('revreplace', ['rev'], function () {
     .pipe(gulp.dest('docs/'));
 });
 
-/* Alias */
 gulp.task('minify', ['minify-js', 'minify-css', 'minify-html']);
 gulp.task('build', $.sequence(['minify-js', 'minify-css', 'imagemin'], 'useref', 'revreplace'));
 gulp.task('default', $.sequence('clean', 'copy', 'minify', 'build'));
-
-
