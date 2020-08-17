@@ -1,4 +1,4 @@
-<h2>Travel Agency Landing Page</h2>
+<a href="https://lucasreinaldi.github.io/travel-agency-website/">Travel Agency Landing Page</a>
 <p>created using sass and compass as stylesheets frameworks, pure js to animations and gulp to frontend automations</p>
 
 ### About the repo:  
