@@ -7,7 +7,7 @@
 const travel-agency = {
   tools: ['html', 'compass', 'javascript', 'gulp'],
   architecture: ['static'],
-  done: '15%'
+  done: '100%'
 }
 
 gulp - to run tasks
